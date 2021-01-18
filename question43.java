@@ -1,15 +1,27 @@
 package Remhomework;
 
 public class question43 {
-    double div(int x, int y) {
-        double result = 2;
+    void div(int x, int y) {
+
         try {
-            result = x / y;
+            System.out.println( x / y);
 
         } catch (ArithmeticException e) {
-            System.out.println("airthemetic exception");
+            System.out.println("number cannot be divided by zero");
             e.printStackTrace();
         }
-        return result;
+
     }
-}
+    public int [] IndexOrder(int [] array){
+        for(int i = 0; i<=array.length; i++)
+            try{
+            System.out.println(array[i]);}
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("the index is invalid");
+        }
+        return array;
+
+    }
+
+
+    }
